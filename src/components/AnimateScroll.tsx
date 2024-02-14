@@ -1,4 +1,4 @@
-import { moiton, motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { useEffect } from "react";
 import styled from "styled-components";
 
@@ -7,12 +7,6 @@ const AnimateScroll = () => {
   useEffect(() => {
     console.log(scrollYProgress);
   }, [scrollYProgress]);
-
-  const styleBar = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
   return (
     <>
       <Container>
