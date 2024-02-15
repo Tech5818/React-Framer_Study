@@ -57,7 +57,6 @@ export const TabMenu = ({ children, path }: TabMenuProps) => {
 
 const StyledTabMenu = styled(motion.div)`
   font-size: 20px;
-  padding: 8px;
   width: 150px;
   cursor: pointer;
   position: relative;
@@ -67,6 +66,7 @@ const StyledLink = styled(Link)`
   display: block;
   width: 100%;
   user-select: none;
+  padding: 8px;
 `;
 const Box = styled(motion.div)`
   background: #e5e5ea;
