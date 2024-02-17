@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Card = () => {
+export const Card = ({ variants }: { variants: Variants }) => {
   return (
     <>
-      <StyledCard></StyledCard>
+      <StyledCard variants={variants}></StyledCard>
     </>
   );
 };
