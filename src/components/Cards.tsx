@@ -11,7 +11,7 @@ const itemVariants: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -19,7 +19,7 @@ const itemVariants: Variants = {
 export const Cards = () => {
   return (
     <>
-      <Container initial="closed" animate="open">
+      <Container initial="closed" whileInView="open" viewport={{ once: true }}>
         <Content>
           <CardContianer
             variants={{
@@ -29,9 +29,6 @@ export const Cards = () => {
                 },
               },
               closed: {},
-            }}
-            whileInView={{
-              transition: {},
             }}
           >
             <Card variants={itemVariants} />
